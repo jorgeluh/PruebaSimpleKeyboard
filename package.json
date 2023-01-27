@@ -1,0 +1,31 @@
+{
+  "name": "pruebasimplekeyboard",
+  "version": "1.0.0",
+  "description": "Prueba del uso de SimpleKeyboard para crear un teclado virtual.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generar": "babel index.js -o index.es5.js",
+    "juntar": "webpack ./index.es5.js -o ./dist"
+  },
+  "keywords": [
+    "prueba",
+    "teclado",
+    "virtual",
+    "SimpleKeyboard"
+  ],
+  "author": "Jorge Lu",
+  "license": "ISC",
+  "dependencies": {
+    "simple-keyboard": "^3.5.16",
+    "simple-keyboard-layouts": "^3.1.269"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "css-loader": "^6.7.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
